@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Animateball</title>
+</head>
+<body>
+<main @click="magic = !magic" :class="{magic: magic}" v-cloak>
+    <color v-for="(color, index) in colors" :color="color" :index="index"></color>
+</main>
+
+<script type="text/x-template" id="color-blade-template">
+    <div class="color" :style="styles">
+        <div></div>
+    </div>
+</script>
+
+
+
+
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
